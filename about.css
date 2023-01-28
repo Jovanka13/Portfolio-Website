@@ -1,0 +1,23 @@
+.about {
+    z-index: 9999;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.about-img img {
+    width: 80%;
+    border-radius: 0.5rem;
+}
+
+.about-text p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    text-align: left;
+
+}
