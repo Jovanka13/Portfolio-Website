@@ -18,14 +18,9 @@
   --hover: hsl(280, 61%, 45%);
   --body-font-family: font-family: 'Poppins', sans-serif;
   --title-font-family: font-family: 'Playfair Display', serif;
-  --big-font: 3.2rem;
+  --big-font: 3rem;
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
-}
-
-body.active {
-  --text-color: #fff;
-  --bg-color: #0f0c27;
 }
 
 body {
@@ -58,6 +53,8 @@ section {
 .heading {
   padding-top: 30px;
   text-align: center;
+  position: relative;
+  z-index: 10000;
 }
 
 .heading h2 {
@@ -127,7 +124,7 @@ header {
   width: 100%;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10001;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -136,10 +133,6 @@ header {
   transition: 0.2s;
   box-shadow: -3px -3px 7px #ffffff73,
     2px 2px 5px rgba(94, 104, 121, 0.288);
-}
-
-header.shadow {
-  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
 }
 
 .navbar {
@@ -162,16 +155,82 @@ header.shadow {
   cursor: pointer;
   z-index: 10001;
   display: none;
+  color: var(--primary-color);
 }
 
-#darkmode {
-  font-size: 22px;
+/*================ DARK/ LIGHT MODE ================*/
+.toggle-mode {
+  font-size: 18px;
   cursor: pointer;
 }
 
+body.light-mode {
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+
+.light-mode .navbar a, .light-mode .home-text span, .light-mode .home-text p, .light-mode .home-text h2 {
+  color: var(--text-color);
+}
+
+.light-mode .navbar a:hover {
+  color: var(--hover);
+}
+
+.light-mode .section-with-svg .svg-bg .fill-color {
+  fill: #ffffff;
+}
+.light-mode .section-with-white-bg {
+  background-color: #ffffff;
+}
+
+/* Styles for dark mode */
+body.dark-mode {
+  background-color: hsl(218, 48%, 8%);
+  transition: 0.5s;
+}
+
+.dark-mode .navbar a, .dark-mode .home-text span, .dark-mode .home-text p, .dark-mode .home-text h2 {
+  color: #ffffff;
+}
+
+.dark-mode .navbar a:hover {
+  color: var(--hover);
+}
+
+.dark-mode .uil {
+  color: #ffffff;
+}
+
+.dark-mode .section-with-svg .svg-bg .fill-color {
+  fill: hsl(218, 48%, 8%);
+}
+.dark-mode .section-with-white-bg {
+  background-color: hsl(218, 48%, 8%);
+}
+
+.dark-mode .about-text p, .dark-mode .contact-title {
+  color: #ffffff;
+}
+
+.dark-mode .contact-card-icon {
+  color: var(--primary-color);
+}
+
+.dark-mode .contact-form-tag {
+  background-color: #1e1a41;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.dark-mode .contact-form button {
+  color: #ffffff;
+}
+
 /*================== HOME ==================*/
-.background-img {
+.svg-bg {
   position: absolute;
+  z-index: 1;
 }
 
 .home {
@@ -188,6 +247,7 @@ header.shadow {
   width: 45%;
   height: 80%;
   position: absolute;
+  z-index: 10000;
   bottom: 0;
   right: 20px;
 }
@@ -210,7 +270,7 @@ header.shadow {
 }
 
 .home-text {
-  z-index: 9999;
+  z-index: 10000;
 }
 
 .home-text span {
@@ -239,14 +299,17 @@ header.shadow {
 .social {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 10000;
 }
 
 .social a {
+  color: #ffffff;
   margin-bottom: 1rem;
   font-size: 32px;
   color: var(--text-color);
   transform: scale(1);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .social a:hover {

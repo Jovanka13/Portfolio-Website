@@ -21,29 +21,31 @@ let header = document.querySelector("header");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
-  header.classList.toggle("shadow", window.scrollY > 0);
-});
-
 menu.onclick = () => {
   navbar.classList.toggle("active");
 };
-window.onscroll = () => {
-  navbar.classList.remove("active");
-};
+
 
 /*=============== DARK/ LIGHT MODE ===============*/
-let darkmode = document.querySelector("#darkmode");
 
-darkmode.onclick = () => {
-  if (darkmode.classList.contains("bx-moon")) {
-    darkmode.classList.replace("bx-moon", "bx-sun");
-    document.body.classList.add("active");
+// Get the mode toggle button and body element
+const toggleBtn = document.querySelector(".toggle-mode");
+const body = document.querySelector("body");
+
+// Add an event listener to the toggle button
+toggleBtn.addEventListener("click", function() {
+  // If the body has the "light-mode" class, remove it and add the "dark-mode" class
+  if (body.classList.contains("light-mode")) {
+    body.classList.remove("light-mode");
+    body.classList.add("dark-mode");
+    document.getElementById("darkmode").className = "uil uil-sun";
   } else {
-    darkmode.classList.replace("bx-sun", "bx-moon");
-    document.body.classList.remove("active");
+    // Otherwise, remove the "dark-mode" class and add the "light-mode" class
+    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
+    document.getElementById("darkmode").className = "uil uil-moon";
   }
-};
+});
 
 /*=============== CERTIFICATES MODAL ===============*/
 // Get all the swiper images
