@@ -1,40 +1,40 @@
 .certificates {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .certificates-content {
-    height: 80vh;
-    width: 100%;
-    border: 1px solid rgba(213, 181, 255, 0.8);
-    border-radius: 20px;
-    margin-top: 2rem;
-    padding: 20px;
-    background-color: rgba(243, 213, 255, 0.8);
-    z-index: 10;
+  height: 80vh;
+  width: 100%;
+  border: 1px solid rgba(213, 181, 255, 0.8);
+  border-radius: 20px;
+  margin-top: 2rem;
+  padding: 20px;
+  background-color: rgba(243, 213, 255, 0.8);
+  z-index: 10;
 }
 
 .swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 .swiper-slide .certificate-img {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* Styles for the modal container */
@@ -78,7 +78,7 @@
   font-weight: 800;
 }
 
-/* Styles to hide the modal content by default */
+/* Styles to hide the modal content by default
 .modal-content-hidden {
   display: none;
-}
+} */

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="certificates.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="media-queries.css">
 </head>
 
 <body class="light-mode">
@@ -32,7 +33,6 @@
             <p><code>{Jovanka}</code></p>
             <p><code>{Jovanka}</code></p>
         </div>
-        <div class="uil uil-list-ul" id="menu-icon"></div>
         <ul class="navbar">
             <li><a href="#home"><i class="uil uil-estate nav-icon"></i> Home</a></li>
             <li><a href="#about"><i class="uil uil-user nav-icon"></i> About</a></li>
@@ -42,10 +42,11 @@
             <li><a href="#contact"><i class="uil uil-message nav-icon"></i> Contact</a></li>
             <div class="uil uil-moon toggle-mode" id="darkmode"></div>
         </ul>
+        <div class="uil uil-list-ul" id="menu-icon"></div>
     </header>
     <section class="home section-with-svg" id="home">
         <svg class="svg-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
-            <rect fill="#FFFFFF" width="1600" height="900" class="fill-color"/>
+            <rect fill="#FFFFFF" width="100%" height="100vhs" class="fill-color" />
             <defs>
                 <linearGradient id="a" x1="0" x2="0" y1="1" y2="0" gradientTransform="rotate(0,0.5,0.5)">
                     <stop offset="0" stop-color="#5B26FF" />
@@ -71,7 +72,7 @@
                     <rect stroke-width="2.2" transform="translate(9 -18) rotate(-21.6 1089 759)" x="1039" y="709"
                         width="100" height="100" />
                     <path transform="translate(-2.4 -2.4) rotate(-3.6 1400 132) scale(0.97)"
-                        d="M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z"/>
+                        d="M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z" />
                 </g>
             </g>
         </svg>
@@ -126,7 +127,6 @@
                     presence for them. With my certifications and portfolio, I am confident that I can be a valuable
                     asset to any team.
                 </p>
-                <a href="#" class="btn about-btn">Download Cv</a>
             </div>
         </div>
     </section>
@@ -223,7 +223,7 @@
 
     <section class="certificates section-with-svg" id="certificates">
         <svg class="svg-bg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
-            <rect fill="#FFFFFF" width="1600" height="900" class="fill-color"/>
+            <rect fill="#FFFFFF" width="1600" height="900" class="fill-color" />
             <defs>
                 <linearGradient id="a" x1="0" x2="0" y1="1" y2="0" gradientTransform="rotate(0,0.5,0.5)">
                     <stop offset="0" stop-color="#5B26FF" />
@@ -249,7 +249,7 @@
                     <rect stroke-width="2.2" transform="translate(9 -18) rotate(-21.6 1089 759)" x="1039" y="709"
                         width="100" height="100" />
                     <path transform="translate(-2.4 -2.4) rotate(-3.6 1400 132) scale(0.97)"
-                        d="M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z"/>
+                        d="M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z" />
                 </g>
             </g>
         </svg>
@@ -301,60 +301,18 @@
                             data-modal-content="image10-content" />
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
             <!-- The modal container -->
-        <div id="modal">
-            <div id="modal-content"></div>
-            <button id="modal-close-button">Close</button>
-        </div>
-        <!-- The content for the images -->
-        <div id="image1-content" class="modal-content-hidden">
-            <img src="images/HTML and CSS certificate-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-        <div id="image2-content" class="modal-content-hidden">
-            <img src="images/HTML5 Application Development-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-        <div id="image3-content" class="modal-content-hidden">
-            <img src="images/JavaScript-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-         <div id="image4-content" class="modal-content-hidden">
-            <img src="images/Visual Design using Adobe Photoshop-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-        <div id="image5-content" class="modal-content-hidden">
-            <img src="images/Database Administration Fundamentals -1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-        <div id="image6-content" class="modal-content-hidden">
-            <img src="images/Java-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-        <div id="image7-content" class="modal-content-hidden">
-            <img src="images/ISTQB Software Tester - Agile-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-        <div id="image8-content" class="modal-content-hidden">
-            <img src="images/ISTQB Software Tester - Foundation Level-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-        <div id="image9-content" class="modal-content-hidden">
-            <img src="images/Selenium Tester-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
-        <div id="image10-content" class="modal-content-hidden">
-            <img src="images/Scrum-1.jpg" style="object-fit: contain;
-            width: 100%; height: 100%;">
-        </div>
+            <div id="modal">
+                <div id="modal-content"></div>
+                <button id="modal-close-button">Close</button>
+            </div>
         </div>
     </section>
 
     <section class="projects" id="projects">
-        <svg id="projects-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1348"
-            height="625" preserveAspectRatio="xMidYMid" viewBox="0 0 1366 625"
+        <svg id="projects-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+            height="625px" preserveAspectRatio="xMidYMid" viewBox="0 0 1366 625"
             style="z-index:1;margin-right:-2px;display:flex;background-repeat:no-repeat;animation-play-state:running">
             <g transform="translate(683,312.5) scale(1,1) translate(-683,-312.5)"
                 style="transform:matrix(1, 0, 0, 1, 0, 0);animation-play-state:running">
@@ -404,16 +362,16 @@
         <div class="cards">
             <div class="card-wrap">
                 <div class="card-image">
-                    <img src="images/screenshot1.png" alt="img1" class="project-img">
+                    <img src="images/screenshot3.png" alt="img1" class="project-img">
                 </div>
                 <div class="card-content">
                     <h3>E-Shop</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                        est suscipit itaque.
+                        Responsible website, created with Html, Css and Javacscript
                     </p>
-                    <a href="#" class="card-btn"> View Project
-                        <i class="uil uil-caret-right card-icon"></i>
+                    <a href="#" class="btn">Demo</a>
+                    <a href="https://github.com/Jovanka13" target="_blank">
+                        <i class="uil uil-github btn card-icon"></i>
                     </a>
                 </div>
             </div>
@@ -424,26 +382,27 @@
                 <div class="card-content">
                     <h3>Weather App</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                        est suscipit itaque.
+                        Fully functional project made with HTML, CSS, Bootstrap, JavaScript, OpenWeatherMap APIs and
+                        Visual Studio Code.
                     </p>
-                    <a href="#" class="card-btn"> View Project
-                        <i class="uil uil-caret-right card-icon"></i>
+                    <a href="#" class="btn">Demo</a>
+                    <a href="https://github.com/Jovanka13" target="_blank">
+                        <i class="uil uil-github btn card-icon"></i>
                     </a>
                 </div>
             </div>
             <div class="card-wrap">
                 <div class="card-image">
-                    <img src="images/screenshot3.png" alt="img1" class="project-img">
+                    <img src="images/screenshot1.png" alt="img1" class="project-img">
                 </div>
                 <div class="card-content">
                     <h3>Memory Game</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                        est suscipit itaque.
+                        Application created with Html, Css and Javacsript.
                     </p>
-                    <a href="#" class="card-btn"> View Project
-                        <i class="uil uil-caret-right card-icon"></i>
+                    <a href="#" class="btn">Demo</a>
+                    <a href="https://github.com/Jovanka13" target="_blank">
+                        <i class="uil uil-github btn card-icon"></i>
                     </a>
                 </div>
             </div>
@@ -474,13 +433,13 @@
                     </div>
                     <div class="contact-card">
                         <a href="https://www.linkedin.com/in/jovanka-karoloska-9413841a3/" target="_blank">
-                            <i class="uil uil-instagram-alt contact-card-icon"></i>
+                            <i class="uil uil-linkedin-alt contact-card-icon"></i>
                         </a>
                         <h3 class="contact-card-title">Instagram</h3>
                     </div>
                     <div class="contact-card">
                         <a href="https://www.instagram.com/k.a.r.o.l.o.s.k.a/" target="_blank">
-                            <i class="uil uil-linkedin contact-card-icon"></i>
+                            <i class="uil uil-instagram contact-card-icon"></i>
                         </a>
                         <h3 class="contact-card-title">LinkedIn</h3>
                     </div>
@@ -506,8 +465,8 @@
                             class="contact-form-input" id="contact-text"></textarea>
                     </div>
                     <p class="contact-message" id="contact-message"></p>
-                    <button type="submit" class="card-btn" id="contact-button">
-                        Send Message <i class="uil uil-caret-right card-icon"></i>
+                    <button type="submit" class="btn" id="contact-button">
+                        Send Message
                     </button>
                 </form>
             </div>
@@ -515,7 +474,7 @@
 
     <footer>
         <svg id="footer-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            style="margin:auto;background:#ebe4eb;display:block;z-index:1;position:relative" width="1344" height="100"
+            style="margin:auto;background:#ebe4eb;display:block;z-index:1;position:relative" width="100%" height="15vh"
             preserveAspectRatio="xMidYMid" viewBox="0 0 1084 322">
             <defs>
                 <pattern id="pid-0.06427502830983323" x="0" y="0" width="243.2" height="243.2"

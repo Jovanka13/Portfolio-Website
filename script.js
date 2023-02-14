@@ -11,9 +11,6 @@ var swiper = new Swiper(".mySwiper", {
     modifier: 1,
     slideShadows: true,
   },
-  pagination: {
-    el: ".swiper-pagination",
-  },
 });
 
 /*=============== TOGGLE MENU ===============*/
@@ -25,7 +22,6 @@ menu.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-
 /*=============== DARK/ LIGHT MODE ===============*/
 
 // Get the mode toggle button and body element
@@ -33,7 +29,7 @@ const toggleBtn = document.querySelector(".toggle-mode");
 const body = document.querySelector("body");
 
 // Add an event listener to the toggle button
-toggleBtn.addEventListener("click", function() {
+toggleBtn.addEventListener("click", function () {
   // If the body has the "light-mode" class, remove it and add the "dark-mode" class
   if (body.classList.contains("light-mode")) {
     body.classList.remove("light-mode");
@@ -67,11 +63,11 @@ swiperImages.forEach((image) => {
     // Get the ID of the modal content from the image's data attribute
     const modalContentId = image.dataset.modalContent;
     // Get the modal content element
-    const content = document.getElementById(modalContentId);
+    const content = document.getElementById(`[data-modal-content=${modalContentId}]`);
     // Show the modal and modal content
     modal.style.display = 'flex';
     content.style.display = 'block';
-    modalContent.innerHTML = content.innerHTML;
+    modalContent.innerHTML = content.outerHTML;
   });
 });
 
@@ -131,7 +127,7 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
-  delay: 400,
+  delay: 300,
   reset: true,
 });
 

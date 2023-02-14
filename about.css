@@ -5,13 +5,13 @@
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     place-items: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .about-img img {
-    width: 80%;
+    width: 100%;
     border-radius: 0.5rem;
 }
 
@@ -19,5 +19,5 @@
     font-size: var(--p-font);
     font-weight: 400;
     text-align: left;
-
+    line-height: 2;
 }
