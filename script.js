@@ -63,7 +63,7 @@ swiperImages.forEach((image) => {
     // Get the ID of the modal content from the image's data attribute
     const modalContentId = image.dataset.modalContent;
     // Get the modal content element
-    const content = document.getElementById(`[data-modal-content=${modalContentId}]`);
+    const content = document.querySelector(`[data-modal-content=${modalContentId}]`);
     // Show the modal and modal content
     modal.style.display = 'flex';
     content.style.display = 'block';
