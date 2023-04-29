@@ -167,6 +167,10 @@
   .projects {
     margin: 0;
 }
+  
+  #projects-bg {
+    display: none !important;
+  }
 
   .contact-container {
     grid-template-columns: 1fr;
